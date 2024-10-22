@@ -16,7 +16,7 @@ const categories = [
   'Sunglasses', 'Tablets', 'Tops', 'Vehicle'
 ];
 
-const NavbarComponent = () => {
+const Navbarcomponent = () => {
   const cart = useSelector((state) => state.products.cart);
   const totalItemsInCart = cart.reduce((total, item) => total + item.quantity, 0);
 
@@ -68,4 +68,4 @@ const NavbarComponent = () => {
   );
 };
 
-export default NavbarComponent;
+export default Navbarcomponent;

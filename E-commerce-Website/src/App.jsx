@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useSelector } from 'react-redux'; 
+import NavbarComponent from './Components/Navbarcomponent';
 import './App.css';
 import Footer from './Components/Footer';
 import ProductsPage from './Components/Products';
 import CartPage from './Components/Cartpage';
 import Searchbar from './Components/Searchbar';
-import NavbarComponent from './components/NavbarComponent';
 
 const App = () => {
   const [searchQuery, setSearchQuery] = useState('');
