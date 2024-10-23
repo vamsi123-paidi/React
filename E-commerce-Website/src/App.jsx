@@ -6,7 +6,7 @@ import Footer from './Components/Footer';
 import ProductsPage from './Components/Products';
 import CartPage from './Components/Cartpage';
 import Searchbar from './Components/Searchbar';
-import Navbarcomponent from './Components/Navbarcomponent';
+import Navbarcomponent from './Components/Navbarcomponent'
 
 const App = () => {
   const [searchQuery, setSearchQuery] = useState('');
@@ -17,7 +17,7 @@ const App = () => {
   return (
     <Router>
       <>
-        <Navbarcomponent />
+        <Navbarcomponent/>
         <Searchbar setSearchQuery={setSearchQuery} />
         <Routes>
           <Route
