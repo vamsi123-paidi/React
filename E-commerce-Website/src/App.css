@@ -6,18 +6,19 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #121212; 
-  color: #f0f0f0;
+  color: #333;
+  background-color: #f0f0f0 !important;
 }
 
 .navbar-brand,
 .category-item a {
-  color: #f0f0f0;
+  color: #ff6347;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .dropdown-title .dropdown-toggle {
-  color: white !important;
+  color: #ff6347 !important;
 }
 
 .main-content {
@@ -27,21 +28,25 @@ body {
 h1 {
   text-align: center;
   margin: 40px 0;
-  font-size: 2.5rem;
-  color: #131212;}
+  font-size: 3rem;
+  color: #2c3e50;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
 .Search-container {
-  background: linear-gradient(45deg, #141e30, #243b55, #2c3e50); 
-  height: 300px;
+  background: linear-gradient(135deg, #f0f8ff, #ff7f50, #d9e2f3); 
+  height: 350px;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 0 15px;
   padding-top: 50px;
-  animation: backgroundAnimation 10s ease infinite; 
+  animation: backgroundAnimation 15s ease infinite; 
   overflow: hidden; 
   background-size: 400% 400%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 @keyframes backgroundAnimation {
@@ -61,6 +66,7 @@ h1 {
     background-position: 0% 50%;
   }
 }
+
 .quote-container {
   margin-bottom: 20px;
   text-align: center;
@@ -68,14 +74,14 @@ h1 {
 }
 
 #quote-text {
-  font-size: 1.5rem;
-  color: #fff;
+  font-size: 2rem;
+  color: #ffffff;
   font-family: 'Courier New', Courier, monospace;
   white-space: nowrap; 
   overflow: hidden; 
-  border-right: 1px solid #fff;
+  border-right: 2px solid #ff6347;
   width: auto; 
-  animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
+  animation: typing 2.5s steps(40, end), blink-caret 0.75s step-end infinite;
   text-overflow: ellipsis; 
 }
 
@@ -86,45 +92,45 @@ h1 {
 
 @keyframes blink-caret {
   from, to { border-color: transparent; }
-  50% { border-color: #fff; }
+  50% { border-color: #ff6347; }
 }
 
 .form-container {
   width: 100%;
-  max-width: 600px;
+  max-width: 650px;
   display: flex;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.6); 
-  padding: 15px;
+  background-color: #ffffff; 
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .form-container input {
   width: 80%;
-  padding: 10px;
-  border: 1px solid #333;
+  padding: 12px;
+  border: 1px solid #ff6347;
   border-radius: 5px;
-  background-color: #1f1f1f;
-  color: #fff;
+  background-color: #f8f8f8;
+  color: #333;
 }
 
 button {
   width: 20%;
   border-radius: 5px;
-  background-color: #007bff;
+  background-color: #ff6347;
   color: #fff;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #e55347;
   transform: translateY(-3px);
 }
 
 @media (max-width: 768px) {
   #quote-text {
-    font-size: 1.5rem; 
+    font-size: 1.8rem; 
     white-space: normal;
   }
 
@@ -157,15 +163,15 @@ button:hover {
 .filter-container select {
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #555;
-  background-color: #1c1c1c;
-  color: #fff;
+  border: 1px solid #ff6347;
+  background-color: #ffffff;
+  color: #333;
 }
 
 .category-section h2 {
-  font-size: 1.8rem;
-  color: #0e0d0d;
-  border-left: 5px solid #007bff;
+  font-size: 2rem;
+  color: #2c3e50;
+  border-left: 5px solid #ff6347;
   padding-left: 10px;
 }
 
@@ -186,47 +192,45 @@ button:hover {
   justify-content: center;
   align-items: center; 
   text-align: center;   
-  flex: 0 0 20%;
-  max-width: 30%;
-  border: 1px solid #333;
+  flex: 0 0 25%;
+  max-width: 50%;
+  border: 1px solid #ff6347;
   border-radius: 10px;
-  padding: 15px;
-  padding-top: 50px;
-  background-color: #1f1f1f;
-  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1); 
-  color: #fff; 
+  background-color: #ffffff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  color: #333;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   scroll-snap-align: start;
 }
 
 .product-card:hover {
-  transform: translateY(-12px); 
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+  transform: translateY(-10px); 
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .product-card img {
-  width: 100%;
-  height: auto;
+  width: 220px;
+  height: 220px;
   border-radius: 10px;
   margin-bottom: 15px;
   object-fit: cover;
 }
 
 .product-card h5 {
-  font-size: 1.2rem;
-  color: #fff;
+  font-size: 1.4rem;
+  color: #2c3e50;
   margin-bottom: 10px;
 }
 
 .product-card p {
-  font-size: 1.0rem;
-  color: #bbb;
+  font-size: 1.1rem;
+  color: #555;
   line-height: 1.5;
 }
 
 .product-card p.price {
   font-weight: bold;
-  color: #007bff;
+  color: #ff6347;
 }
 
 .mb-2 {
@@ -256,12 +260,12 @@ input[type="number"] {
 }
 
 .products-row::-webkit-scrollbar-thumb {
-  background: #007bff;
+  background: #ff6347;
   border-radius: 4px;
 }
 
 .products-row::-webkit-scrollbar-track {
-  background: #333;
+  background: #f0f0f0;
 }
 
 @media (max-width: 768px) {
@@ -276,28 +280,4 @@ input[type="number"] {
     flex: 0 0 80%;
     max-width: 80%;
   }
-}
-
-.footer-container {
-  background-color: #1f1f1f;
-  color: #fff;
-  transition: background-color 0.3s ease;
-}
-
-.footer-container:hover {
-  background-color: #292929;
-}
-
-.footer-content p {
-  margin: 0;
-  padding: 10px 0;
-  font-size: 16px;
-}
-
-.category-list a {
-  color: #bbb;
-}
-
-.category-list a:hover {
-  color: #007bff;
 }
